@@ -10,6 +10,8 @@ const stringifyJson = require('../src/json').stringify;
 const exec = promisify(require('child_process').exec);
 
 describe(run, function() {
+  this.timeout(5 * 1000);
+
   let tmpPath;
 
   beforeEach(async function() {

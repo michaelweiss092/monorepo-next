@@ -18,6 +18,8 @@ async function getTagsOnLastCommit(cwd) {
 }
 
 describe(_release, function() {
+  this.timeout(5 * 1000);
+
   let tmpPath;
 
   beforeEach(async function() {
